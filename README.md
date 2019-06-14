@@ -1,4 +1,4 @@
-# Design-tear-down
+# Design-teardown
 
 A study of the visual hierarchy of [Smashing Magazine](https://www.smashingmagazine.com/) website.<br>
 <br><br>
