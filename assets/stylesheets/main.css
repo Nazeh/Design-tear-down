@@ -1,13 +1,54 @@
+body{
+    color:white;
+    font-family: 'Acme', sans-serif;
+}
+
+/* ======== weights ======= */
+.w1{
+    background-color: rgb(201, 201, 201);
+}
+
+.w2{
+    background-color: rgb(175, 175, 175);
+}
+
+.w3{
+    background-color: rgb(151, 151, 151);
+}
+
+.w4{
+    background-color: rgb(125, 125, 125);
+}
+
+.w5{
+    background-color: rgb(102, 102, 102);
+}
+
+.w6{
+    background-color: rgb(75, 75, 75);
+}
+
+.w7{
+    background-color: rgb(51, 51, 51);
+}
+/* ======================== */
+
 header{
     display: grid;
-    grid-template-columns: 260px repeat(5,1fr) 150px;
+    grid-template-columns: 240px repeat(5,auto) 230px;
     width: 100%;
     height: 180px;
-    background-color: rgb(87, 87, 87);
+     
 }
-header p{
-    place-self:center;
+header h1{
+    place-self: center;
+    font-size: 32px;
 }
+
+header :nth-last-child(1){
+    font-size: 24px;
+}
+
 main{
     position: relative;
 }
@@ -25,7 +66,7 @@ main{
     text-align: center
 }
 .miss span{
-    background-color: rgb(88, 88, 88);
+     
     padding: 10px;
     line-height: 1.5em;
 }
@@ -43,18 +84,6 @@ main{
 
 }
 
-.articles :nth-child(1){
-    background-color: rgb(158, 158, 158);
-}
-.articles :nth-child(2){
-    background-color: rgb(110, 110, 110);
-}
-.articles :nth-child(3){
-    background-color: rgb(66, 66, 66);
-}
-.articles :nth-child(4){
-    background-color: rgb(182, 182, 182);
-}
 
 .latest-post{
     display: grid;
@@ -68,12 +97,9 @@ main{
     height: 400px;
     
     padding: 10px 20px;
-    background-color: red;
-    color: black;
-
 }
 .latest-post :nth-child(odd){
-    background-color: gray;   
+     
 }
 .square{
     margin: 0;
@@ -89,20 +115,20 @@ main{
 .coming-up{
     width: 100%;
     height: 800px;
-    background-color: blue;
+     
 }
 .design-sys{
     width: 100%;
     height: 450px;
-    background-color: gray;
+     
 }
 .newsletter{
     height: 1024px;
-    background-color: green;
+     
 }
 
 footer{
     width: 100%;
     height: 700px;
-    background-color: blueviolet;
+     
 }
