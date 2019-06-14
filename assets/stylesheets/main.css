@@ -51,3 +51,54 @@ main{
 .articles :nth-child(4){
     background-color: rgb(182, 182, 182);
 }
+
+.latest-post{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 400px 800px 800px;
+    grid-gap: 20px;
+    padding: 20px;
+    
+}
+.latest-post div{
+    height: 400px;
+    
+    padding: 10px 20px;
+    background-color: red;
+    color: black;
+
+}
+.latest-post :nth-child(odd){
+    background-color: gray;   
+}
+.square{
+    margin: 0;
+    padding: 0;
+    grid-column: span 2;
+}
+.square-2{
+    margin: 0;
+    padding: 0;
+    grid-column: 3/5;
+}
+
+.coming-up{
+    width: 100%;
+    height: 800px;
+    background-color: blue;
+}
+.design-sys{
+    width: 100%;
+    height: 450px;
+    background-color: gray;
+}
+.newsletter{
+    height: 1024px;
+    background-color: green;
+}
+
+footer{
+    width: 100%;
+    height: 700px;
+    background-color: blueviolet;
+}
