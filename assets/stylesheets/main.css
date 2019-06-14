@@ -1,7 +1,19 @@
 body{
     color:white;
     font-family: 'Acme', sans-serif;
+    font-size: 24px;
 }
+
+div{
+    display: grid;
+}
+
+h1{
+    font-family: 'Patua One', cursive;
+    font-size: 32px;
+    place-self: center;
+}
+
 
 /* ======== weights ======= */
 .w1{
@@ -40,10 +52,6 @@ header{
     height: 180px;
      
 }
-header h1{
-    place-self: center;
-    font-size: 32px;
-}
 
 header :nth-last-child(1){
     font-size: 24px;
@@ -81,47 +89,75 @@ main{
 .articles div{
     width: 100%;
     height: 100%;
-
 }
 
 
 .latest-post{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 400px 800px 800px;
+    grid-template-rows: 650px 650px 650px;
     grid-gap: 20px;
     padding: 20px;
     
 }
-.latest-post div{
-    height: 400px;
-    
-    padding: 10px 20px;
+.latest-post div{    
+    padding: 30px;
 }
-.latest-post :nth-child(odd){
-     
+
+.latest-post :nth-child(4){
+    height: 140px;
+    width: 280px;
+    border-radius: 10px;
+    justify-self: center;
+    margin-top: 100px;
 }
+
 .square{
-    margin: 0;
-    padding: 0;
     grid-column: span 2;
+    border-radius: 10px;
 }
-.square-2{
-    margin: 0;
-    padding: 0;
-    grid-column: 3/5;
-}
+
+
+
 
 .coming-up{
     width: 100%;
     height: 800px;
-     
+    justify-content: center;
 }
+
+
+.community{
+    margin: 40px;
+    grid-template-rows: 266px repeat(3, 217px);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.community div{
+    padding: 0 150px;
+}
+
+.community h1{
+    justify-self: left;
+}
+
+.community :nth-child(1){
+    grid-column: span 2;
+}
+
+
 .design-sys{
     width: 100%;
-    height: 450px;
-     
+    height: 400px;   
+    justify-content: left;
+    padding-left: 50px; 
 }
+.design-sys h1{
+    justify-self: left;
+}
+
+
 .newsletter{
     height: 1024px;
      
