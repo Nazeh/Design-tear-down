@@ -17,7 +17,7 @@ h1 {
 
 /* ======== weights ======= */
 .w1 {
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(221, 221, 221);
 }
 
 .w2 {
@@ -48,13 +48,24 @@ h1 {
 
 header {
     display: grid;
-    grid-template-columns: 240px repeat(5, auto) 230px;
+    grid-template-columns: 240px auto 230px;
     width: 100%;
     height: 180px;
 
 }
 
-header :nth-last-child(1) {
+nav ul {
+    height: 100%;
+    display: flex;
+}
+
+nav ul li{
+    width: 20%;
+    display: flex;
+    place-content: center;
+}
+
+.topics h1 {
     font-size: 24px;
 }
 
@@ -86,11 +97,13 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 750px 650px;
 }
 
-.articles div {
-    width: 100%;
-    height: 100%;
+.articles div h1 {
+    font-size: 47px;
+    line-height: 2em;
+    padding: 100px;
 }
 
 
@@ -104,7 +117,7 @@ main {
 }
 
 .latest-post div {
-    padding: 30px;
+    padding: 50px;
 }
 
 .latest-post :nth-child(4) {
@@ -113,6 +126,8 @@ main {
     border-radius: 10px;
     justify-self: center;
     margin-top: 100px;
+    place-content: center;
+    font-size: 1.5em;
 }
 
 .square {
@@ -162,19 +177,19 @@ main {
 }
 
 
-.curated{
+.curated {
     height: 800px;
-    grid-template-columns: repeat(4,1fr);
-    margin:60px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 60px;
     grid-gap: 10px;
 }
 
-.curated div{
+.curated div {
     padding: 30px;
 }
 
-.curated h1{
-    justify-self: left ;
+.curated h1 {
+    justify-self: left;
 }
 
 
