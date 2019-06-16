@@ -4,11 +4,11 @@ body {
     font-size: 24px;
 }
 
-div {
+section, div {
     display: grid;
 }
 
-h1 {
+h1,h2,h3,h4,h5 {
     font-family: 'Patua One', cursive;
     font-size: 32px;
     place-self: center;
@@ -65,12 +65,18 @@ nav ul li{
     place-content: center;
 }
 
-.topics h1 {
+.topics h3 {
     font-size: 24px;
+    width: 1em;
+    height: 1em;
 }
 
 main {
     position: relative;
+}
+
+main h2{
+    justify-self: left;
 }
 
 .miss {
@@ -100,7 +106,7 @@ main {
     grid-template-rows: 750px 650px;
 }
 
-.articles div h1 {
+.articles section h2 {
     font-size: 47px;
     line-height: 2em;
     padding: 100px;
@@ -110,13 +116,13 @@ main {
 .latest-post {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 650px 650px 650px;
+    grid-template-rows: 700px 700px 700px;
     grid-gap: 20px;
     padding: 20px;
 
 }
 
-.latest-post div {
+.latest-post section {
     padding: 50px;
 }
 
@@ -152,18 +158,16 @@ main {
     grid-gap: 50px;
 }
 
-.community div {
+.community section {
     padding: 0 150px;
-}
-
-.community h1 {
-    justify-self: left;
+    display: grid;
+    align-content: center;
+    justify-content: left;
 }
 
 .community :nth-child(1) {
     grid-column: span 2;
 }
-
 
 .design-sys {
     width: 100%;
@@ -172,11 +176,6 @@ main {
     padding-left: 50px;
 }
 
-.design-sys h1 {
-    justify-self: left;
-}
-
-
 .curated {
     height: 800px;
     grid-template-columns: repeat(4, 1fr);
@@ -184,8 +183,8 @@ main {
     grid-gap: 10px;
 }
 
-.curated div {
-    padding: 30px;
+.curated section {
+    padding: 50px;
 }
 
 .curated h1 {
@@ -198,7 +197,9 @@ main {
     margin: 100px;
     margin-bottom: 320px;
     border-radius: 20px;
+    place-content: center;
 }
+
 
 footer {
     width: 100%;
