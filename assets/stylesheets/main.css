@@ -238,8 +238,13 @@ footer p{
 }
 
 footer div ul {
-    display: grid;
-    grid-template-columns: repeat(7, auto);
-    justify-self: center;
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    justify-content: center;
+}
+
+footer div ul li{
+    margin: 0 25px;
+    list-style: disc;
 }
