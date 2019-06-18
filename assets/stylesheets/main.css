@@ -169,10 +169,18 @@ main h2{
 }
 
 .community section {
+    position: relative;
     padding: 0 150px;
     display: grid;
     align-content: center;
     justify-content: left;
+}
+
+.community .user-image{
+    position: absolute;
+    top: 60px ;
+    left: 50px;
+    background-color: rgb(197, 197, 197);
 }
 
 
