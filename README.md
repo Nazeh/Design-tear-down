@@ -7,7 +7,7 @@ Built With:
 * CSS3
 
 # GitHub Page
-[Live version](https://raw.githack.com/Nazeh/design-teardown/development/index.html)
+[Live version](https://nazeh.github.io/design-teardown/)
 # Authors
 * Ar Nazeh https://github.com/Nazeh
 * Abdusaid10 https://github.com/Abdusaid10
