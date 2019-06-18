@@ -1,0 +1,285 @@
+body {
+    color: white;
+    font-family: 'Acme', sans-serif;
+    font-size: 24px;
+}
+
+section, div, article {
+    display: grid;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Patua One', cursive;
+    font-size: 32px;
+    place-self: center;
+}
+
+
+/* ======== weights ======= */
+.w1 {
+    background-color: rgb(221, 221, 221);
+}
+
+.w2 {
+    background-color: rgb(175, 175, 175);
+}
+
+.w3 {
+    background-color: rgb(151, 151, 151);
+}
+
+.w4 {
+    background-color: rgb(125, 125, 125);
+}
+
+.w5 {
+    background-color: rgb(102, 102, 102);
+}
+
+.w6 {
+    background-color: rgb(75, 75, 75);
+}
+
+.w7 {
+    background-color: rgb(51, 51, 51);
+}
+
+/* ======================== */
+
+nav {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+nav h3 {
+    font-size: 24px;
+}
+
+main {
+    position: relative;
+}
+
+main h2{
+    justify-self: left;
+}
+
+.miss {
+    position: absolute;
+
+    transform: translateX(-50%);
+
+    margin-top: 50px;
+    margin-left: 50%;
+
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center
+}
+
+.miss span {
+
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+.articles {
+    height: 1400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 750px 650px;
+
+}
+
+.articles section{
+
+    display: block;
+    padding: 200px 50px;
+}
+
+.user-image{
+    display: block;
+    
+    left: 80px;
+    top: 80px;
+
+    width: 75px;
+    height: 75px;
+    
+    background-color: rgb(219, 219, 219);
+}
+
+.articles section h2 {
+    font-size: 47px;
+    line-height: 2em;
+    align-self: top;
+}
+
+
+.latest-post {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 700px 700px 700px;
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+.latest-post section, article {
+    padding: 50px;
+}
+
+.latest-post :nth-child(4) {
+    height: 140px;
+    width: 280px;
+    border-radius: 10px;
+    justify-self: center;
+    margin-top: 100px;
+    place-content: center;
+    font-size: 1.5em;
+}
+
+.square {
+    grid-column: span 2;
+    border-radius: 10px;
+    place-content: center;
+}
+
+.coming-up {
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+}
+
+.coming-up h2{
+    justify-self: center;
+}
+
+
+.community {
+    margin: 40px;
+    display: grid;
+    grid-template-rows: 266px repeat(3, 217px);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.community section {
+    position: relative;
+    padding: 0 150px;
+    display: grid;
+    align-content: center;
+    justify-content: left;
+}
+
+.community .user-image{
+    position: absolute;
+    top: 60px ;
+    left: 50px;
+    background-color: rgb(197, 197, 197);
+}
+
+
+.person {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 220px auto;
+    place-content: center;
+    padding: 0 60px;
+    justify-self: left
+}
+
+.person-image{
+    width: 220px;
+    height: 220px;
+    box-sizing: border-box;
+}
+
+.person p {
+    font-size: 16px;
+    line-height: 2em;
+    width: 800px;
+    padding: 50px;
+    color: grey;
+}
+
+
+.design-sys {
+    height: 400px;
+    justify-content: left;
+    padding-left: 50px;
+}
+
+.design-sys .signup{
+    width: 290px;
+    height: 90px;
+    border-radius: 25px;
+}
+
+.curated {
+    height: 800px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 60px;
+    grid-gap: 10px;
+}
+
+.curated section {
+    padding: 50px;
+    grid-template-rows: 100px auto;
+}
+
+.curated h1 {
+    justify-self: left;
+}
+
+.curated ul{
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.curated ul li{
+    list-style: disc;
+    padding :10px 0;
+}
+
+.newsletter {
+    height: 1024px;
+    margin: 100px;
+    margin-bottom: 320px;
+    border-radius: 20px;
+    place-content: center;
+}
+
+
+footer {
+    width: 100%;
+    height: 700px;
+
+}
+
+footer div {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+footer p{
+    text-align: center;
+    align-self: center;
+}
+
+footer div ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    justify-content: center;
+}
+
+footer div ul li{
+    margin: 0 25px;
+    list-style: disc;
+}
